@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include android:id="@+id/app_bar"
+            layout="@layout/toolbar"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:background="@color/backgroundColor"
+        android:fitsSystemWindows="true"
+        android:fillViewport="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/imgPhotoProfile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        />
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginLeft="20dp"
+android:layout_marginTop="50dp"
+android:layout_marginRight="20dp"
+android:orientation="horizontal">
+
+<ImageView
+    android:layout_width="@dimen/icon"
+    android:layout_height="@dimen/icon"
+    android:src="@drawable/username"
+    android:layout_gravity="center"/>
+
+
+    <EditText
+        android:inputType="text"
+        android:hint="Username"
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MyEditText"
+        />
+
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginLeft="20dp"
+android:layout_marginTop="20dp"
+android:layout_marginRight="20dp"
+android:orientation="horizontal">
+
+<ImageView
+    android:layout_width="@dimen/icon"
+    android:layout_height="@dimen/icon"
+    android:src="@drawable/password"
+    android:layout_gravity="center"/>
+
+
+    <EditText
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MyEditText"
+        />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvLoginMessage"
+            android:textColor="@color/errorColor"
+            android:visibility="gone"
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundPrimaryColor"
+            android:textColor="@color/textPrimaryColor"
+            android:textStyle="bold"
+            android:onClick="Signin"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:text="Login"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textSecondaryColor"
+            android:background="@color/backgroundTertiaryColor"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:text="Don't have an account ? Sing up"/>
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_choose"
+        android:orderInCategory="1"
+        android:title="CHOOSE FILE"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_noPhoto"
+        android:orderInCategory="2"
+        android:title="NO PHOTO"
+        app:showAsAction="always" />
+
+
+</menu>

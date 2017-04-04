@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include android:id="@+id/app_bar"
+            layout="@layout/toolbar"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:background="@color/backgroundColor"
+        android:fitsSystemWindows="true"
+        android:fillViewport="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+        <ImageView
+            android:id="@+id/imgPhotoProfile"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:src="@drawable/placeholder_profile_circle"
+            android:layout_marginRight="20dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/input"
+
+        android:layout_marginRight="@dimen/input"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon"
+            android:src="@drawable/username"
+            android:layout_gravity="center"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        android:textColorHint="@color/hintColor"
+        android:layout_gravity="top"
+        >
+
+        <EditText
+            android:imeOptions="actionNext"
+            android:maxLines="1"
+            android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username (at least 6 characters)*"
+            style="@style/MyEditText"
+            android:nextFocusDown="@id/etPassword"
+        />
+
+
+
+    </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/input"
+        android:layout_marginRight="@dimen/input"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon"
+            android:src="@drawable/password"
+            android:layout_gravity="center"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            android:textColorHint="@color/hintColor"
+            android:layout_gravity="top"
+            android:nextFocusDown="@id/tilUsername"
+            >
+
+            <EditText
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password (at least 6 characters)*"
+                style="@style/MyEditText"
+                />
+
+
+
+        </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/input"
+
+            android:layout_marginRight="@dimen/input"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/icon"
+                android:layout_height="@dimen/icon"
+                android:src="@drawable/profile"
+                android:layout_gravity="center"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilFirstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                android:textColorHint="@color/hintColor"
+                android:layout_gravity="top"
+                android:nextFocusDown="@id/tilFirstname"
+                >
+
+                <EditText
+                    android:maxLength="40"
+                    android:maxLines="1"
+                    android:id="@+id/etFirstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/MyEditText"
+                    android:hint="First Name*"
+                    />
+
+
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/input"
+
+        android:layout_marginRight="@dimen/input"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon"
+            android:src="@drawable/profile"
+            android:layout_gravity="center"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilLastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            android:textColorHint="@color/hintColor"
+            android:layout_gravity="top"
+            android:nextFocusDown="@id/tilLastname"
+            >
+
+            <EditText
+                android:maxLength="40"
+                android:maxLines="1"
+                android:id="@+id/etLastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name*"
+                style="@style/MyEditText"
+                />
+
+
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/input"
+        android:layout_marginRight="@dimen/input"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon"
+            android:src="@drawable/date"
+            android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvBirthdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth*"
+                android:textSize="14sp"
+                />
+
+        <EditText
+
+            android:id="@+id/etBirthdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pick a date"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:textStyle=""
+            />
+
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/tvRegisterMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sdasdasd"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textColor="@color/errorColor"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input"
+        android:layout_marginLeft="@dimen/input"
+        android:layout_marginRight="@dimen/input"
+        android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundPrimaryColor"
+        android:textColor="@color/textPrimaryColor"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:text="Sign Up"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_marginTop="@dimen/input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textSecondaryColor"
+        android:background="@color/backgroundTertiaryColor"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:text="Already have an account ? Log in"/>
+    </LinearLayout>
+
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

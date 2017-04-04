@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewRecycle"
+    android:layout_gravity="top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginRight="5dp"
+    card_view:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:baselineAligned="false"
+        android:id="@+id/linear_layout_card_view"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="3dp"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="top"
+            android:background="@color/backgroundAdapter"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="@dimen/booksView"
+                android:background="@color/backgroundAdapter"
+                android:src="@drawable/book_loading"
+                android:id="@+id/imgBook"
+                android:layout_width="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:baselineAlignBottom="true"
+                android:layout_height="150dp"
+                android:focusable="false"/>
+
+
+
+            <TextView
+                android:id="@+id/tvBookTitle"
+                android:layout_width="wrap_content"
+                android:text="TITLE"
+                android:layout_marginTop="@dimen/booksView"
+                android:layout_marginLeft="@dimen/booksView"
+                android:layout_marginStart="@dimen/booksView"
+                android:layout_marginEnd="@dimen/booksView"
+                android:layout_marginRight="@dimen/booksView"
+                android:layout_toRightOf="@id/imgBook"
+                android:layout_toEndOf="@id/imgBook"
+                android:textSize="20sp"
+                android:textColor="@color/textAlternativeColor"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_toRightOf="@id/imgBook"
+                android:layout_toEndOf="@id/imgBook"
+                android:layout_below="@id/tvBookTitle"
+                android:layout_marginLeft="@dimen/booksView"
+                android:layout_marginStart="@dimen/booksView"
+                android:layout_marginEnd="@dimen/booksView"
+                android:layout_marginRight="@dimen/booksView"
+                android:orientation="vertical"
+                android:id="@+id/LLBookAdapter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+                android:text="by Author"
+                android:layout_toRightOf="@id/imgBook"
+                android:layout_toEndOf="@id/imgBook"
+                android:layout_below="@id/tvBookTitle"
+                android:id="@+id/tvAuthor"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:alpha=".87"
+                android:layout_marginLeft="@dimen/booksView"
+                android:layout_marginStart="@dimen/booksView"
+                android:layout_marginEnd="@dimen/booksView"
+                android:layout_marginRight="@dimen/booksView"
+                android:layout_marginBottom="@dimen/booksView"
+                android:textColor="@color/textSecondaryColor"
+                android:layout_height="wrap_content" />
+
+
+            <RatingBar
+                android:focusable="false"
+                android:layout_toRightOf="@id/imgBook"
+                android:layout_toEndOf="@id/imgBook"
+                android:layout_below="@id/tvAuthor"
+                android:id="@+id/ratingBar"
+                style="@style/RatingBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/booksView"
+                android:layout_marginStart="@dimen/booksView"
+                android:layout_marginEnd="@dimen/booksView"
+                android:layout_marginRight="@dimen/booksView"
+                android:numStars="5"
+                android:rating="0"
+                android:isIndicator="true"/>
+
+            <TextView
+                android:layout_toRightOf="@id/imgBook"
+                android:layout_toEndOf="@id/ratingBar"
+                android:layout_below="@id/tvAuthor"
+                android:id="@+id/tvRating"
+                android:layout_marginLeft="@dimen/booksView"
+                android:layout_marginStart="@dimen/booksView"
+                android:layout_marginEnd="@dimen/booksView"
+                android:layout_marginRight="@dimen/booksView"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_toRightOf="@id/imgBook"
+                android:layout_toEndOf="@id/imgBook"
+                android:layout_below="@id/ratingBar"
+                android:id="@+id/tvNrRatings"
+                android:layout_marginLeft="@dimen/booksView"
+                android:layout_marginStart="@dimen/booksView"
+                android:layout_marginEnd="@dimen/booksView"
+                android:layout_marginRight="@dimen/booksView"
+                android:layout_marginBottom="3dp"
+                android:text="no. of ratings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_toRightOf="@id/imgBook"
+                android:layout_toEndOf="@id/imgBook"
+                android:layout_below="@id/tvNrRatings"
+                android:id="@+id/tvNrRead"
+                android:layout_marginLeft="@dimen/booksView"
+                android:layout_marginStart="@dimen/booksView"
+                android:layout_marginEnd="@dimen/booksView"
+                android:layout_marginRight="@dimen/booksView"
+                android:layout_marginBottom="@dimen/booksView"
+                android:text="no. of readers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvBookId"
+                android:visibility="gone"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

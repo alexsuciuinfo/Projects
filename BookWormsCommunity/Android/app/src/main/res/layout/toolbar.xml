@@ -1,0 +1,17 @@
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bookworms="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    bookworms:theme="@style/ActionBarThemeOverlay"
+    bookworms:titleTextAppearance="@style/ActionBar.TitleText"
+    bookworms:title="BookWormsComunity">
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:visibility="gone"
+        android:divider="@color/textPrimaryColor"
+        android:id="@+id/spinnerToolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></android.support.v7.widget.AppCompatSpinner>
+
+</android.support.v7.widget.Toolbar>

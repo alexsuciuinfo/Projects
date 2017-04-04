@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <include android:id="@+id/app_bar"
+            layout="@layout/toolbar"/>
+
+<android.support.design.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:background="@drawable/background_test"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:id="@+id/llMyImage">
+            <ImageView
+                android:alpha="0.95"
+                android:id="@+id/imgMyProfilePhoto"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center_horizontal"
+                android:foregroundGravity="center_horizontal"
+                android:src="@drawable/placeholder_profile_circle"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tvProfileFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textSecondaryColor"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="Name"
+                />
+
+            <TextView
+                android:textSize="20sp"
+                android:fontFamily="cursive"
+                android:id="@+id/tvProfileUsername"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="usename"
+                android:layout_marginBottom="5dp"
+                />
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="5">
+
+                <Button
+                    android:fontFamily="sans-serif-condensed"
+                    android:contextClickable="false"
+                    android:background="@color/md_blue_grey_300"
+                    android:textSize="@dimen/buttonText"
+                    android:textAllCaps="false"
+                    android:clickable="false"
+                    android:id="@+id/btnRatings"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Ratings\n0"/>
+
+                <Button
+                    android:background="@color/backgroundPrimaryColor"
+                    android:textColor="@color/textPrimaryColor"
+                    android:textSize="@dimen/buttonText"
+                    android:textAllCaps="false"
+                    android:id="@+id/btnBooksWanted"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Wanted\n0"/>
+
+                <Button
+                    android:background="@color/backgroundPrimaryColor"
+                    android:textColor="@color/textPrimaryColor"
+                    android:textSize="@dimen/buttonText"
+                    android:textAllCaps="false"
+                    android:id="@+id/btnBooks"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Books\n0"/>
+
+                <Button
+                    android:background="@color/backgroundPrimaryColor"
+                    android:textColor="@color/textPrimaryColor"
+                    android:textSize="@dimen/buttonText"
+                    android:textAllCaps="false"
+                    android:id="@+id/btnBooksRead"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="Read\n0"/>
+
+                <Button
+                    android:fontFamily="sans-serif-condensed"
+                    android:clickable="false"
+                    android:background="@color/md_blue_grey_300"
+                    android:textSize="@dimen/buttonText"
+                    android:textAllCaps="false"
+                    android:id="@+id/btnReviews"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Reviews\n0"/>
+
+            </LinearLayout>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/backgroundAdapter"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/textSecondaryColor"
+                    android:text="BirthDate"
+                    />
+
+                <TextView
+                    android:id="@+id/tvProfileBirthdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/backgroundAdapter"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/textSecondaryColor"
+                    android:text="Location"
+                    />
+
+                <TextView
+                    android:id="@+id/tvProfileLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/backgroundAdapter"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/textSecondaryColor"
+                    android:text="Gender"
+                    />
+
+                <TextView
+                    android:id="@+id/tvProfileGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/backgroundAdapter"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/textSecondaryColor"
+                    android:text="About"
+                    />
+
+                <TextView
+                    android:id="@+id/tvProfileAbout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    />
+
+            </LinearLayout>
+            </LinearLayout>
+            </ScrollView>
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+
+        android:id="@+id/fabEditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:src="@android:drawable/ic_menu_edit"
+        app:layout_anchor="@id/llMyImage"
+        app:layout_anchorGravity="bottom|right|end"/>
+
+</android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

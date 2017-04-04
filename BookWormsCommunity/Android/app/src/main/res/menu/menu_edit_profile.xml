@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.EditProfileActivity">
+    <item
+        android:id="@+id/action_edit"
+        android:orderInCategory="101"
+        android:title="Edit"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_done"/>
+</menu>

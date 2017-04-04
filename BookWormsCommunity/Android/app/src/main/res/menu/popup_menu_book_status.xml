@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_read"
+        android:orderInCategory="1"
+        android:title="Read"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_wanted"
+        android:orderInCategory="2"
+        android:title="Wanted"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_notAdded"
+        android:orderInCategory="3"
+        android:title="Not Set"
+        app:showAsAction="always"/>
+
+
+</menu>

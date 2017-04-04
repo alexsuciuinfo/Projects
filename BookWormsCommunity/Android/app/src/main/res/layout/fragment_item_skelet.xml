@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+
+    <ImageView
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/imgDrawerItemPhoto"
+        android:layout_width="wrap_content"
+        android:src="@android:drawable/ic_menu_today"
+        android:layout_height="48dp" />
+
+    <TextView
+        android:text="Log In"
+        android:gravity="center"
+        android:layout_marginLeft="45dp"
+        android:textColor="@color/textPrimaryColor"
+        android:id="@+id/tvDrawerItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp" />
+
+</RelativeLayout>

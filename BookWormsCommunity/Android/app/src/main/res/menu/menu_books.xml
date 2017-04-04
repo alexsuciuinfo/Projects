@@ -1,0 +1,87 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.BooksActivity">
+
+
+    <item
+        android:id="@+id/action_search_mode"
+        android:title="Search Mode"
+        android:orderInCategory="0"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_arrow_downward_white_36dp"/>
+
+    <item
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:id="@+id/action_sort"
+        android:orderInCategory="5"
+        android:title="Search"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/action_title"
+                android:orderInCategory="1"
+                android:title="Title"/>
+            <item
+                android:id="@+id/action_author"
+                android:orderInCategory="2"
+                android:title="Author"/>
+            <item
+                android:id="@+id/action_date"
+                android:orderInCategory="1"
+                android:title="Date"/>
+            <item
+                android:id="@+id/action_rating"
+                android:orderInCategory="1"
+                android:title="Rating"/>
+            <item
+                android:id="@+id/action_nrRating"
+                android:orderInCategory="1"
+                android:title="No Rating"/>
+            <item
+                android:id="@+id/action_readers"
+                android:orderInCategory="1"
+                android:title="No Readers"/>
+        </menu>
+
+
+    </item>
+
+    <!--<item-->
+        <!--android:icon="@android:drawable/ic_menu_agenda"-->
+        <!--android:id="@+id/action_select_category"-->
+        <!--android:title="Category"-->
+        <!--android:orderInCategory="1"-->
+        <!--app:showAsAction="always">-->
+
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:checkable="true"-->
+                <!--android:id="@+id/action_Classics"-->
+                <!--android:title="Classics"-->
+                <!--app:showAsAction="always|withText"/>-->
+            <!--<item-->
+                <!--android:checkable="true"-->
+                <!--android:id="@+id/action_Crime"-->
+                <!--android:title="Crime"-->
+                <!--app:showAsAction="always|withText"/>-->
+            <!--<item-->
+                <!--android:checkable="true"-->
+                <!--android:id="@+id/action_Philosophy"-->
+                <!--android:title="Philosophy"-->
+                <!--app:showAsAction="always|withText"/>-->
+            <!--<item-->
+                <!--android:checkable="true"-->
+                <!--android:id="@+id/action_Science"-->
+                <!--android:title="Science"-->
+                <!--app:showAsAction="always|withText"/>-->
+            <!--<item-->
+                <!--android:checkable="true"-->
+                <!--android:id="@+id/action_SF"-->
+                <!--android:title="SF"-->
+                <!--app:showAsAction="always|withText"/>-->
+        <!--</menu>-->
+
+    <!--</item>-->
+</menu>

@@ -1,0 +1,17 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="booksView">7dp</dimen>
+    <dimen name="input">15dp</dimen>
+    <dimen name="icon">20dp</dimen>
+    <dimen name="bookHeight">150dp</dimen>
+    <dimen name="bookWidth">100dp</dimen>
+    <dimen name="title">24sp</dimen>
+    <dimen name="photoReviewHeight">60dp</dimen>
+    <dimen name="photoReviewWidth">40dp</dimen>
+    <dimen name="margin_draweer">10dp</dimen>
+    <dimen name="buttonText">12sp</dimen>
+    <dimen name="no_data_found">25sp</dimen>
+</resources>

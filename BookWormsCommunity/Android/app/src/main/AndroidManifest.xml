@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="suciu.alexandru.com.bookwormscommunity">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BookWormsCommunity">
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/Theme.BookWormsCommunity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:theme="@style/Theme.BookWormsCommunity"></activity>
+        <activity
+            android:name=".activities.BooksActivity"
+            android:label="@string/title_activity_books"
+            android:theme="@style/Theme.BookWormsCommunity">
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SearchActivity" />
+        </activity>
+        <activity
+            android:name=".activities.EditProfileActivity"
+            android:label="@string/title_activity_edit_profile"
+            android:theme="@style/Theme.BookWormsCommunity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.ProfileActivity" />
+        </activity>
+        <activity
+            android:name=".activities.NewsActivity"
+            android:label="@string/title_activity_news"
+            android:theme="@style/Theme.BookWormsCommunity" >
+            </activity>
+        <activity
+            android:name=".activities.SuggestionsActivity"
+            android:label="@string/title_activity_suggestion"
+            android:theme="@style/Theme.BookWormsCommunity" />
+        <activity
+            android:name=".activities.BookDetailsActivity"
+            android:label="@string/title_activity_book_details"
+            android:parentActivityName=".activities.NewsActivity"
+            android:theme="@style/Theme.BookWormsCommunity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.NewsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:parentActivityName=".activities.NewsActivity"
+            android:theme="@style/Theme.BookWormsCommunity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.NewsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:parentActivityName=".activities.NewsActivity"
+            android:theme="@style/Theme.BookWormsCommunity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.NewsActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".test.MyBooksActivity"
+            android:label="MyBooksActivity"
+            android:theme="@style/Theme.BookWormsCommunity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.NewsActivity" />
+        </activity>
+        <activity android:name=".activities.MainActivity"
+            android:label="MyBooksActivity"
+            android:theme="@style/Theme.BookWormsCommunity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.NewsActivity" />
+        </activity>
+    </application>
+
+</manifest>

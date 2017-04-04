@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewRecycle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:layout_marginEnd="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    card_view:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:id="@+id/llMyReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/imgUserPhotoReview"
+            android:layout_width="@dimen/photoReviewWidth"
+            android:layout_height="@dimen/photoReviewHeight"
+            android:src="@drawable/placeholder_profile_circle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@color/textSecondaryColor"
+                    android:id="@+id/tvReviewUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="alex" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="rated this book" />
+
+            </LinearLayout>
+
+            <RatingBar
+                android:isIndicator="true"
+                android:id="@+id/ratingBarReviewRating"
+                style="@style/RatingBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="3.5" />
+
+            <TextView
+                android:id="@+id/tvUserReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blassssssssssssssssssssssssss das ddddddddddddddddddddd das d" />
+
+            <TextView
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/tvReviewDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11/11/2011" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="backgroundPrimaryColor">
+        @color/md_blue_grey_500
+    </color>
+
+    <color name="backgroundSecondaryColor">
+        @color/md_blue_grey_700
+    </color>
+
+    <color name="backgroundColor">
+        @color/md_brown_50
+    </color>
+
+    <color name="backgroundTertiaryColor">
+        @color/md_white_1000
+    </color>
+
+    <color  name="backgroundAccent">
+        @color/md_purple_A200
+    </color>
+
+    <color name="textPrimaryColor">
+        @color/md_white_1000
+    </color>
+
+    <color name="textSecondaryColor">
+        @color/md_indigo_A700
+    </color>
+
+    <color name="textTertiaryColor">
+        @color/md_brown_500
+    </color>
+
+    <color name="backgroundAdapter">
+        @color/md_grey_50
+    </color>
+
+    <color name="textAlternativeColor">
+        @color/md_black_1000
+    </color>
+
+    <color name="buttonBackground">
+        @color/md_grey_600
+    </color>
+
+    <color name="errorColor">
+        @color/md_red_300
+    </color>
+
+    <color name="hintColor">
+        @color/md_grey_600
+    </color>
+
+    <color name="lineSeparator">
+        @color/md_grey_500
+    </color>
+
+</resources>
